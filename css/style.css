@@ -45,4 +45,53 @@ header .header___user .signin {
   background-color: black;
   color: white;
 }
+
+nav {
+  padding: 20px 50px;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: inherit;
+}
+
+@media (max-width: 1350px) {
+  nav ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+nav ul li {
+  width: 200px;
+  text-align: center;
+  line-height: 46px;
+  height: 46px;
+  border-radius: 15px;
+  border: solid 1px;
+  margin: 10px 0;
+}
+
+@media (max-width: 1350px) {
+  nav ul li {
+    width: 25vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */

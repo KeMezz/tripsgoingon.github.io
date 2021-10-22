@@ -36,3 +36,38 @@ header {
     }
 }
 
+nav {
+    padding: 20px 50px;
+    max-width: $maxWidth;
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-family: $mainFonts;
+        font-weight: 500;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-content: center;
+        width: 100%;
+        height: inherit;
+        @media (max-width: 1350px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        li {
+            width: 200px;
+            text-align: center;
+            line-height: 46px;
+            height: 46px;
+            border-radius: 15px;
+            border: solid 1px;
+            margin: 10px 0;
+            @media (max-width: 1350px) {
+                width: 25vw;
+            }
+        }
+    }
+}
