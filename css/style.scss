@@ -5,6 +5,34 @@
 }
 
 header {
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: $maxWidth;
     padding: $containerPadding;
+    .header___logo {
+        font-family: $logoFonts;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .header___user {
+        display: flex;
+        div {
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-family: $mainFonts;
+            cursor: pointer;
+        }
+        .signin {
+            background-color: black;
+            color: white;
+        }
+    }
 }
+
