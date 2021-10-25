@@ -24,24 +24,6 @@ body {
 }
 
 header {
-    .xi-bars {
-        display: none;
-        @media (max-width: 768px) {
-            position: absolute;
-            display: block;
-            font-size: 1.6rem;
-            left: 25px;
-        }
-    }
-    .xi-profile {
-        display: none;
-        @media (max-width: 768px) {
-            position: absolute;
-            display: block;
-            font-size: 1.6rem;
-            right: 25px;
-        }
-    }
     background-color: #fff;
     height: 80px;
     margin: 0 auto;
@@ -55,40 +37,90 @@ header {
         justify-content: center;
         height: 60px;
     }
-    .header___logo {
-        font-family: $logoFonts;
-        font-weight: 600;
-        font-size: 30px;
-        @media (max-width: 768px) {
-            font-size: 22px;
-        }
-    }
-    .header___user {
+    .header___wrapper {
+        width: 100%;
+        position: fixed;
+        left: 0;
         display: flex;
-        @media (max-width: 768px) {
+        justify-content: center;
+        height: inherit;
+        align-items: center;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 100;
+        background-color: rgba(255,255,255,0.5);
+        backdrop-filter: blur(20px);
+        .header___items {
+            @media (min-width: 768px) {
+                display: flex;
+                max-width: $maxWidth;
+                padding: $containerPadding;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+        @media (max-width: 767px) {
+            justify-content: center;
+            width: 100%;
+        }
+        .xi-bars {
             display: none;
+            @media (max-width: 768px) {
+                position: absolute;
+                display: block;
+                font-size: 1.6rem;
+                left: 25px;
+            }
         }
-        div {
-            width: 120px;
-            height: 40px;
-            text-align: center;
-            line-height: 40px;
-            border-radius: 10px;
+        .xi-profile {
+            display: none;
+            @media (max-width: 768px) {
+                position: absolute;
+                display: block;
+                font-size: 1.6rem;
+                right: 25px;
+            }
+        }
+        .header___logo {
+            font-family: $logoFonts;
             font-weight: 600;
-            font-family: $mainFonts;
-            cursor: pointer;
+            font-size: 30px;
+            @media (max-width: 768px) {
+                font-size: 22px;
+            }
         }
-        .signin {
-            background-color: black;
-            color: white;
+        .header___user {
+            display: flex;
+            @media (max-width: 768px) {
+                display: none;
+            }
+            div {
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 10px;
+                font-weight: 600;
+                font-family: $mainFonts;
+                cursor: pointer;
+            }
+            .signin {
+                background-color: black;
+                color: white;
+            }
         }
     }
+}
+
+nav.active {
+    display: block;
 }
 
 nav {
     padding: 20px 50px;
     max-width: $maxWidth;
     margin: 0 auto;
+    position: relative;
     @media (max-width: 768px) {
         display: none;
     }
@@ -99,6 +131,26 @@ nav {
         font-family: $mainFonts;
         font-weight: 500;
         transition: 0.3s;
+    }
+    .overlay.active {
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 55vh;
+        background-color: #fff;
+    }
+    ul.active {
+        z-index: 2;
+        left: 50%;
+        top: 20px;
+        transform: translate(-50%);
+        position: fixed;
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        margin-top: 5rem;
     }
     ul {
         display: grid;

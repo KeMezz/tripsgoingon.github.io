@@ -5,7 +5,6 @@ $('.right').click(function() {
     $('.secB___container.active').prev().removeClass("active");
     $('.secB___page>div.active').next().addClass("active");
     $('.secB___page>div.active').prev().removeClass("active");
-    $('.secB').style.backgroundColor(String(colors[1]));
 })
 
 $('.left').click(function() {
@@ -15,3 +14,8 @@ $('.left').click(function() {
     $('.secB___page>div.active').next().removeClass("active");
 })
 
+$('.xi-bars').click(function() {
+    $('.nav').toggleClass("active");
+    $('.nav___ul').toggleClass("active");
+    $('.overlay').toggleClass("active");
+})
