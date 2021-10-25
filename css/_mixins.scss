@@ -1,0 +1,10 @@
+@import "_variables";
+
+@mixin containerDefaults {
+    padding: $containerPadding;
+    max-width: $maxWidth;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        padding: $mobilePadding;
+    }
+}
