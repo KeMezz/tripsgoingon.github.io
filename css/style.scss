@@ -32,7 +32,7 @@ header {
     align-items: center;
     max-width: $maxWidth;
     padding: $containerPadding;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: $mobilePadding;
         justify-content: center;
         height: 60px;
@@ -51,7 +51,7 @@ header {
         background-color: rgba(255,255,255,0.5);
         backdrop-filter: blur(20px);
         .header___items {
-            @media (min-width: 768px) {
+            @media (min-width: 767px) {
                 display: flex;
                 max-width: $maxWidth;
                 padding: $containerPadding;
@@ -65,7 +65,7 @@ header {
         }
         .xi-bars {
             display: none;
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 position: absolute;
                 display: block;
                 font-size: 1.6rem;
@@ -74,7 +74,7 @@ header {
         }
         .xi-profile {
             display: none;
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 position: absolute;
                 display: block;
                 font-size: 1.6rem;
@@ -85,13 +85,13 @@ header {
             font-family: $logoFonts;
             font-weight: 600;
             font-size: 30px;
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 font-size: 22px;
             }
         }
         .header___user {
             display: flex;
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 display: none;
             }
             div {
@@ -121,7 +121,7 @@ nav {
     max-width: $maxWidth;
     margin: 0 auto;
     position: relative;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         display: none;
     }
     a {
@@ -190,7 +190,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 0;
     }
     @media (max-width: 1000px) {
@@ -218,7 +218,7 @@ main {
         flex-direction: column;
         width: 65%;
         height: 50%;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             width: 100%;
         }
         @media (max-width: 1000px) {
@@ -238,7 +238,7 @@ main {
             @media (max-width: 1000px) {
                 height: 35%;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 height: 30%;
             }
             input {
@@ -255,9 +255,10 @@ main {
                     border-radius: 20px;
                     padding: 0 1.4rem;
                 }
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     font-size: 20px;
                     height: 60px;
+                    text-align: center;
                 }
                 &:focus {
                     outline: none;
@@ -280,7 +281,7 @@ main {
             @media (max-width: 1000px) {
                 height: 65%;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 height: 70%;
             }
             h3 {
@@ -294,7 +295,7 @@ main {
                     font-size: 24px;
                     height: 25%;
                 }
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     font-size: 22px;
                     padding-left: 1rem;
                     height: 30%;
@@ -337,7 +338,7 @@ main {
             font-family: $mainFonts;
             font-weight: 500;
             font-size: 1.2rem;
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 font-size: 1rem;
             }
         }
@@ -356,7 +357,7 @@ main {
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 3rem;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             justify-content: center;
         }
         .secA___h2 {
@@ -366,7 +367,7 @@ main {
             @media (max-width: 1000px) {
                 font-size: 34px;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 font-size: calc(14px + 1.4vw);
             }
         }
@@ -378,7 +379,7 @@ main {
             @media (max-width: 1000px) {
                 font-size: 18px;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 display: none;
             }
         }
@@ -400,7 +401,7 @@ main {
             grid-template-columns: repeat(3, 1fr);
             gap: 1.6rem;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             grid-template-columns: repeat(2, 1fr);
             gap: 4vw;
         }
@@ -554,13 +555,13 @@ main {
     gap: 1rem;
     @media (max-width: 1000px) {
         grid-template-columns: 1fr;
-        grid-template-rows: 60% 40%;
+        grid-template-rows: 4.3fr 3.3fr;
         justify-items: center;
-        gap: 3rem;
+        gap: 0;
     }
     @media (max-width: 767px) {
-        grid-template-rows: 40% 35%;
-        gap: 5rem;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
     }
 }
 
@@ -569,20 +570,20 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 10rem;
-    @media(max-width: 1200px) {
+    @media (max-width: 1200px) {
         padding-left: 6rem;
     }
-    @media(max-width: 1000px) {
+    @media (max-width: 1000px) {
         padding: 0;
         order: 1;
         text-align: center;
         align-items: center;
         justify-content: center;
-        padding-bottom: 12rem;
+        margin-bottom: 5rem;
     }
     @media (max-width: 767px) {
         justify-content: flex-start;
-        padding-bottom: 8rem;
+        margin-bottom: 8rem;
     }
     .secB___text {
         display: flex;
@@ -657,7 +658,7 @@ main {
         justify-self: center;
     }
     @media (max-width: 767px) {
-        padding-top: 5rem;
+        padding: 3rem 0;
     }
     img {
         width: 30vw;
@@ -671,12 +672,215 @@ main {
             height: 60vw;
             min-width: 300px;
             min-height: 300px;
+            max-width: 400px;
+            max-height: 400px;
         }
         @media (max-width: 767px) {
             width: 30vw;
             height: 30vw;
             min-width: 250px;
             min-height: 250px;
+        }
+    }
+}
+
+.secC {
+    @include containerDefaults;
+    margin-top: 100px;
+    .secC___title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            font-family: $mainFonts;
+            font-weight: 600;
+            font-size: 44px;
+            @media (max-width: 1000px) {
+                font-size: 34px;
+            }
+            @media (max-width: 767px) {
+                font-size: calc(14px + 1.4vw);
+            }
+        }
+        button {
+            border: none;
+            background-color: #fff;
+            font-size: 24px;
+            padding: 10px 1rem;
+            position: relative;
+            cursor: pointer;
+            @media (max-width: 1000px) {
+                margin-top: 30px;
+                font-size: 18px;
+            }
+        }
+        button.active:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%);
+            width: 60%;
+            height: 3px;
+            background-color: red;
+        }
+    }
+    .secC___items {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        @media (max-width: 1400px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            margin-top: 20px;
+        }
+        .secC___item {
+            height: 400px;
+            border: solid 1px #000;
+        }
+    }
+}
+
+.secD {
+    margin-top: 100px;
+    background-color: #F2F0FE;
+    .secD___wrapper {
+        @include containerDefaults;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.5fr;
+        }
+        .secD___text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (min-width: 1400px) {
+                padding-left: 50px;
+            }
+            @media (max-width: 1000px) {
+                order: 1;
+                padding: 2rem;
+                text-align: center;
+                align-items: center;
+            }
+            h1 {
+                font-family: $mainFonts;
+                font-weight: 600;
+                font-size: calc(2rem + 1.4vw);
+                line-height: 1.5;
+                @media (max-width: 767px) {
+                    font-size: calc(30px + 1vw);
+                }
+            }
+            h2 {
+                padding-top: 32px;
+                font-family: $mainFonts;
+                font-weight: 500;
+                font-size: calc(14px + 1vw);
+                cursor: pointer;
+                i {
+                    transition: 0.3s;
+                }
+                &:hover {
+                    i {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+        .secD___photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+            gap: 2vw;
+            @media (max-width: 1000px) {
+                padding: 2rem 0;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4vw;
+            }
+            .photo {
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                max-height: 300px;
+                height: 15vw;
+                border-radius: 10px;
+                transition: 0.2s;
+                @media (max-width: 1000px) {
+                    height: 30vw;
+                }
+                &:hover {
+                    transform: scale(105%);
+                    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #5F5F5F;
+    .footer___wrapper {
+        @include containerDefaults;
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        color: #fff;
+        line-height: 2.5;
+        font-family: $mainFonts;
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 3rem;
+            padding-top: 3rem;
+        }
+        .footer___container {
+            b {
+                font-weight: 600;
+                position: relative;
+                padding-bottom: 8px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 200px;
+                    height: 1px;
+                    background-color: #fff;
+                    @media (max-width: 767px) {
+                        left: 50%;
+                        transform: translate(-50%);
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+    h5 {
+        text-align: center;
+        padding: 4rem 0;
+        font-family: $logoFonts, $mainFonts;
+        font-size: 22px;
+        color: white;
+        @media (max-width: 767px) {
+            font-size: 16px;
         }
     }
 }
