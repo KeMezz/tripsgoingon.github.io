@@ -760,6 +760,7 @@ main .main___searchbox .searchbox___keywords h3 {
   .secB .left {
     font-size: 30px;
     top: 70%;
+    padding: 0;
   }
 }
 
@@ -787,6 +788,7 @@ main .main___searchbox .searchbox___keywords h3 {
   .secB .right {
     font-size: 30px;
     top: 70%;
+    padding: 0;
   }
 }
 
