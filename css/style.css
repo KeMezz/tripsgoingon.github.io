@@ -746,6 +746,7 @@ main .main___searchbox .searchbox___keywords h3 {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   cursor: pointer;
+  color: black;
 }
 
 @media (max-width: 1200px) {
@@ -772,6 +773,7 @@ main .main___searchbox .searchbox___keywords h3 {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   cursor: pointer;
+  color: black;
 }
 
 @media (max-width: 1200px) {
@@ -1118,6 +1120,7 @@ main .main___searchbox .searchbox___keywords h3 {
 .secC .secC___title button {
   border: none;
   background-color: #fff;
+  color: black;
   font-size: 24px;
   padding: 10px 1rem;
   position: relative;
