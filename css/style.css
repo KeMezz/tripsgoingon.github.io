@@ -1346,11 +1346,18 @@ footer .footer___wrapper {
 
 @media (max-width: 1000px) {
   footer .footer___wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     text-align: center;
     gap: 3rem;
     padding-top: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .footer___wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -1387,7 +1394,7 @@ footer h5 {
   color: white;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   footer h5 {
     font-size: 16px;
   }
